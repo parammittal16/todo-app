@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TO DO LIST APP</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="./assets/styles.css">
+</head>
+<body>
+	<h1>My To DO</h1>
+	<div id="todo-table">
+		<ul>
+			<% for(var i = 0; i < todos.length; i++){ %> 
+			<li><%= todos[i].item %></li>
+		<% } %>
+		</ul>
+	</div>
+</body>
+</html>
